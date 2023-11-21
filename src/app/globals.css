@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+      --color-cyan-500: theme('colors.cyan.500');
+      --color-purple-500: theme('colors.purple.500');
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Light.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: italic;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-LightItalic.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 500;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Regular.woff') format('woff2');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 500;
+      font-style: italic;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Italic.woff') format('woff2');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 600;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Medium.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 600;
+      font-style: italic;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-MediumItalic.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 700;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Semibold.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 700;
+      font-style: italic;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-SemiboldItalic.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 800;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Bold.woff') format('woff');
+      font-display: block;
+  }
+
+  @font-face {
+      font-family: IBM Plex Sans;
+      font-weight: 800;
+      font-style: italic;
+      src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-BoldItalic.woff') format('woff');
+      font-display: block;
+  }
+
+  body {
+      font-family: 'IBM Plex Sans';
+  }
+
+  .font-sans {
+      font-family: 'IBM Plex Sans';
+  }
+}
+
+@layer components {}
+
+@layer utilities {}
+
+.wrap-input {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.email-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  white-space: nowrap;
+  border-width: 0px;
+}
+
+.input-style{
+  text-size-adjust: 100%;
+  tab-size: 4;
+  box-sizing: border-box;
+  border: 2px solid rgb(234, 51, 35);
+  margin: 0px;
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.btn-input-wrap{
+  margin-top: 0px;
+}
+
+.btn-input-style {
+  appearance: button;
+  text-size-adjust: 100%;
+  tab-size: 4;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  margin: 0px;
+  background-color: rgb(234, 51, 35);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-width: 100px;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
+  border-radius: 0px 6px 6px 0px;
+  padding: 0px 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-tele {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-70%, -20%);
+  background: linear-gradient(180deg,rgb(234, 51, 35) 0%, rgb(224, 179, 175) 100%);
+}
+
+*{
+  font-family: IBM Plex Sans;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.border-join{
+  border-radius: 2rem;
+}
+
+.cub-1 {
+  width: 17vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scale(1, -1) translate(50%, 0%);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1) translate(50%, 0%);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+}
+
+.cub-2 {
+  width: 12vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, -80%);
+}
+
+.cub-3 {
+  width: 5vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(300%, 200%);
+}
+
+.range-text-join{
+  flex-basis: unset;
+}
+
+.join-logo-white{
+  width: 3vh;
+}
+
+.bg-card-hover {
+  background: white;
+}
+
+.bg-card-hover:hover {
+  background: #d8d8d8;
+}
+
+.checkmark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: green;
+  stroke-miterlimit: 10;
+  stroke-dashoffset: 0;
+  margin: 10% auto;
+}
+
+@media only screen and (max-width: 767.5px) {
+  .cub-1 {
+      opacity: 0;
+  }
+
+  .cub-2 {
+      opacity: 0;
+  }
+
+  .cub-3 {
+      opacity: 0;
+      /* left: unset;
+      right: 0;
+      transform: translate(-80%, 150%); */
+  }
+
+  .border-join{
+      border-radius: 1rem;
+  }
+
+  .range-text-join{
+      flex-basis: fit-content;
+  }
+
+  .flex-center {
+      display: unset !important;
+      align-items: unset !important;
+      justify-content: unset !important;
+  }
+}
+
+@media only screen and (max-width: 991.5px) {
+
+  .cub-2 {
+      width: 7vh;
+  }
+
+  .cub-1 {
+      width: 9vh;
+  }
+
+  .border-join{
+      border-radius: 1rem;
+  }
+
+  .range-text-join{
+      flex-basis: fit-content;
+  }
+}
