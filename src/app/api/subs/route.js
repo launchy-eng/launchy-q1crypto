@@ -10,7 +10,7 @@ export async function POST(request) {
         'Content-Type': 'application/json',
     };
 
-    const response = await axios.post(`https://api.beehiiv.com/v2/publications/${process.env.NEXT_PUBLIC_PUB_ID_BEEHIIV}/subscriptions`, data, { headers })
+    const response = await axios.post(`https://api.beehiiv.com/v2/publications/${process.env.NEXT_PUBLIC_PUBLICATION_ID}/subscriptions`, data, { headers })
         .catch(error => {
             console.error('Error:', error.message);
         });
